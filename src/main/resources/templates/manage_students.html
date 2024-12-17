@@ -1,62 +1,81 @@
+
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
   <title>Quản lý Sinh viên</title>
-  <!-- Thư viện Bootstrap -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/font/bootstrap-icons.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
   <style>
     body {
-      background-color: #f0f2f5;
-      font-family: Arial, sans-serif;
+      background-color: #eef2f7;
+      font-family: 'Roboto', Arial, sans-serif;
     }
-
     .container {
       margin-top: 30px;
     }
-
+    /* Thêm các theme màu sắc */
     .table-container {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to bottom right, #ffffff, #f7faff);
+      border-radius: 15px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
       padding: 20px;
     }
 
-    .modal-content {
-      border-radius: 10px;
-    }
-
-    .page-title {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #0d6efd;
-      margin-bottom: 20px;
-    }
-
-    .btn-custom {
-      background-color: #0d6efd;
+    .table-primary {
+      background: linear-gradient(to right, #007bff, #00c6ff);
       color: white;
     }
 
+    .page-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #007bff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn-custom {
+      background: linear-gradient(to right, #007bff, #0056b3);
+      color: white;
+      border-radius: 30px;
+    }
+
     .btn-custom:hover {
-      background-color: #0056b3;
+      background: linear-gradient(to right, #0056b3, #003a73);
     }
 
-    .btn-warning, .btn-danger {
-      border-radius: 20px;
-    }
-
-    .btn-warning i, .btn-danger i {
-      margin-right: 5px;
+    .btn-warning {
+      background: linear-gradient(to right, #ffc107, #ffdd7f);
+      color: white;
     }
 
     .btn-warning:hover {
-      background-color: #d9a404;
+      background: linear-gradient(to right, #e0a800, #c99400);
+    }
+
+    .btn-danger {
+      background: linear-gradient(to right, #dc3545, #ff6f6f);
+      color: white;
     }
 
     .btn-danger:hover {
-      background-color: #b30000;
+      background: linear-gradient(to right, #c82333, #a40019);
+    }
+
+    .modal-content {
+      background: linear-gradient(to bottom right, #ffffff, #eef2f7);
+      border-radius: 15px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .alert-success {
+      background: linear-gradient(to right, #28a745, #67e667);
+      color: white;
+    }
+
+    body {
+      background: linear-gradient(to right, #eef2f7, #d6e9f9);
+      font-family: 'Roboto', Arial, sans-serif;
     }
   </style>
 </head>
@@ -294,5 +313,3 @@
 
 </body>
 </html>
-
-
